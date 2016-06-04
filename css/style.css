@@ -1,0 +1,26 @@
+body {
+	background-image: url('../img/japan.gif');
+	color: white;
+}
+	
+
+h1 { 
+	text-align: center;
+}
+
+footer {
+	position : absolute;
+    bottom : -35em;
+    height : 40px;
+    margin-top : 40px;
+
+}
+
+.main {
+	background-color: rgba(0,0,0,.3);
+	width:  100%;
+}
+	
+form {
+	margin-bottom: 10px;
+}
