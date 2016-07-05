@@ -1,3 +1,5 @@
+
+
 body {
 	background-image: url('../img/japan.gif');
 	background-size: 100% 100%;
@@ -29,7 +31,7 @@ form {
 	margin-right: 10px;
 }
 
-.greeting h1 {
+h1#greeting {
 	font-size: 6em;
 	padding: 60px 200px 0px;
 }
@@ -43,7 +45,7 @@ footer {
     font-size: .8em;
 }
 
-img {
+img#logo {
 	text-align: center;
 	max-height: 350px;
 	position: relative;
@@ -69,6 +71,33 @@ img {
 	transition: background-color 0.5s ease, color .5s ease;
 }
 
+#socialMedia {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#socialMedia img {
+
+}
+#socialMedia a {
+	margin: 0 auto;
+}
+
+
 a:hover {
 	text-decoration: none;
+}
+
+@media only screen and (max-width: 769px)  {
+	h1, h1#greeting {
+		font-size: 4em;
+	}
+
+	h1#greeting {
+		margin: 0 auto;
+		padding: 100px 0 0;
+		
+	}
 }
