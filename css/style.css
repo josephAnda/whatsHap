@@ -1,34 +1,15 @@
-
+/*Style rules roughly in order of elements appearance on the page.  Media queries at the bottom*/
 
 body {
 	background-image: url('../img/japan.gif');
-	background-size: 100% 100%;
+	background-size: 1274px 940px;
 	color: white;
 	background-color: rgba(30, 55, 100, 1);
 	background-position:  0px 100px;
 }
 	
-
 h1 { 
 	text-align: center;
-}
-
-.main {
-	background-color: rgba(0, 0, 0, .7);
-	width:  100%;
-}
-
-.main p {
-	
-	text-align: center;
-}
-	
-form {
-	margin-bottom: 10px;
-}
-
-.radio {
-	margin-right: 10px;
 }
 
 h1#greeting {
@@ -36,22 +17,12 @@ h1#greeting {
 	padding: 60px 200px 0px;
 }
 
-footer {
-	position : relative;
-    bottom : -27em;
-    height : 40px;
-    
-    margin-left: 10px;
-    font-size: .8em;
+form {
+	margin-bottom: 10px;
 }
 
-img#logo {
-	text-align: center;
-	max-height: 350px;
-	position: relative;
-	display: block;
-	margin: 0 auto;
-	bottom: 0em;
+.radio {
+	margin-right: 10px;
 }
 
 .signUp {
@@ -72,6 +43,16 @@ img#logo {
 	transition: background-color 0.5s ease, color .5s ease;
 }
 
+.main {
+	background-color: rgba(0, 0, 0, .7);
+	width:  100%;
+}
+
+.main p {
+	
+	text-align: center;
+}
+
 #socialMedia {
 	width: 50%;
 	margin: 0 auto;
@@ -79,16 +60,30 @@ img#logo {
 	text-align: center;
 }
 
-#socialMedia img {
-
-}
 #socialMedia a {
 	margin: 0 auto;
 }
 
-
 a:hover {
 	text-decoration: none;
+}
+
+img#logo {
+	text-align: center;
+	max-height: 350px;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	bottom: 0em;
+}
+
+footer {
+	position : relative;
+    bottom : -27em;
+    height : 40px;
+    
+    margin-left: 10px;
+    font-size: .8em;
 }
 
 @media only screen and (max-width: 769px) and (min-width: 415px)  {
