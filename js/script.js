@@ -1,4 +1,4 @@
-//[  ]  Build this with MVC
+//[!!]  Build this with MVC
 //[  ]  Stop mixing font size specification types (like px and em)
 //[!!]  Format footer text properly  
 //[  ]  Occupy top of page with logo
