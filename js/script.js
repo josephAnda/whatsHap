@@ -13,14 +13,32 @@
 
 		init: function() {
 			console.log("model initialized") //<--For debugging
-		}
+		},
+		navForm: $('#navForm'),
+		phantom: $('#phantom')  // <---This is to keep the non-taskbar content from re-flowing once the taskbar locks via position: fixed
+
 
 	};
 
 	var view = {
 
 		init: function() {
-			console.log("view initialized")  //<--also for debugging
+			console.log("view initialized");  //<--also for debugging
+			view.scrollLock();
+		},
+		scrollLock: function() {
+			$(window).scroll(function() {    
+			    var scroll = $(window).scrollTop();
+			    console.log(scroll);  // <--- Useful for debugging the scroll-dependent menu-fixing 
+			    if (scroll >= 100) {
+			    	console.log("This should work", model.navForm);
+			        model.navForm.addClass("taskbar-scroll");
+			        model.phantom.css({position: "relative"});
+			    } else {
+			        model.navForm.removeClass("taskbar-scroll");
+			        model.phantom.css({position: "fixed", visibility: "hidden"});  
+			    }
+			})
 		}
 
 	};

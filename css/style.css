@@ -10,7 +10,7 @@ body {
 	
 h1 { 
 	text-align: center;
-}
+}		
 
 h1#greeting {
 	font-size: 6em;
@@ -51,6 +51,20 @@ form {
 .main p {
 	
 	text-align: center;
+}
+
+.taskbar-scroll {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	background-color: #fff;
+}
+
+#phantom {
+	visibility: hidden;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
 }
 
 #socialMedia {
