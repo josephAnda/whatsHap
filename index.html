@@ -8,7 +8,8 @@
 [!!]  Formalize responsive design principles (and apply to all elements)
     [!!]  Make image and image centering responsive 
 [!!]  Implement locking taskbar  NOTE:  Run script.js once the DOM is ready.  Also, 
-    [  ]  Apply locking scroll to the whole div, not just the sigup buttons.  
+    [!!]  Apply locking scroll to the whole div, not just the sigup buttons. 
+    [  ]  Make locking scroll unconditional (in an effort to fix the tiny jutter on the first scroll from the top) 
 [  ]  Send the social media links to somewhere besides your profile	
 [  ]  Integrate new assets from the dropbox
 [  ]  Link 'Find out More' to a form of sorts
@@ -27,12 +28,12 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-		<div class="container main">
+		<div class="container main" id="navForm">
 			<div class="row">
 				<div class="col-md-12">
-					<h1>WhatsHap</h1>
+					<h1><img src="img/whatshapLogo.png" id="mainLogo"></img></h1>
 					<p>Your NLC.</p>
-					<form class="navbar-form navbar-right" id="navForm" role="form">
+					<form class="navbar-form navbar-right" role="form">
 						<div class="radio">
 						    <label>
 						      <input type="radio" name="optionsRadios" id="userOption" value="user" checked>
@@ -50,8 +51,7 @@
   						</div>
   						<button type="submit" class="btn btn-default">Sign Up</button>
 					</form>
-					<form class="navbar-form navbar-right" id="phantom" role="form">
-					</form>
+					
 					
 				</div>
 				
@@ -59,6 +59,39 @@
 
 
 		</div>
+		<!---  The div below is non-semantic, for styling purposes -->
+		<div class="container main" id="phantom">
+			<div class="row">
+				<div class="col-md-12">
+					<h1><img src="img/whatshapLogo.png" id="mainLogo"></img></h1>
+					<p>Your NLC.</p>
+					<form class="navbar-form navbar-right" role="form">
+						<div class="radio">
+						    <label>
+						      <input type="radio" name="optionsRadios" id="userOption" value="user" checked>
+						      User
+						    </label>
+						  </div>
+						  <div class="radio">
+						    <label>
+						      <input type="radio" name="optionsRadios" id="businessOption" value="business">
+						      Business
+						    </label>
+						</div><br/>
+  						<div class="form-group">
+    						<input type="text" class="form-control" placeholder="Enter e-mail address . . .">
+  						</div>
+  						<button type="submit" class="btn btn-default">Sign Up</button>
+					</form>
+					
+					
+				</div>
+				
+			</div>
+
+
+		</div>
+		<!--  End of non-semantic div -->
 			
 			<div class="row">
 				<div>

@@ -44,8 +44,9 @@ form {
 }
 
 .main {
-	background-color: rgba(0, 0, 0, .7);
+	background-color: rgba(0, 0, 0, 1);
 	width:  100%;
+	transition: background-color 0.5s ease, color .5s ease;
 }
 
 .main p {
@@ -53,11 +54,17 @@ form {
 	text-align: center;
 }
 
+#mainLogo {
+	max-width: 200px;
+}
+
 .taskbar-scroll {
 	position: fixed;
 	z-index: 1;
 	top: 0;
-	background-color: #fff;
+	background-color: rgba(0, 0, 0, .7);
+	transition: background-color 0.5s ease, color .5s ease;
+	
 }
 
 #phantom {
