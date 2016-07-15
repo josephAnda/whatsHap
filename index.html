@@ -9,7 +9,8 @@
     [!!]  Make image and image centering responsive 
 [!!]  Implement locking taskbar  NOTE:  Run script.js once the DOM is ready.  Also, 
     [!!]  Apply locking scroll to the whole div, not just the sigup buttons. 
-    [  ]  Make locking scroll unconditional (in an effort to fix the tiny jutter on the first scroll from the top) 
+    [!!]  Make locking scroll unconditional (in an effort to fix the tiny jutter on the first scroll from the top) 
+    [  ]  Remove needless semantic element and reposition appropriately 
 [  ]  Send the social media links to somewhere besides your profile	
 [  ]  Integrate new assets from the dropbox
 [  ]  Link 'Find out More' to a form of sorts
@@ -30,9 +31,9 @@
 	<body>
 		<div class="container main" id="navForm">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="">
 					<h1><img src="img/whatshapLogo.png" id="mainLogo"></img></h1>
-					<p>Your NLC.</p>
+					<p id="motto">Your NLC.</p>
 					<form class="navbar-form navbar-right" role="form">
 						<button type="submit" class="btn btn-default btn-custom">Sign Up</button>
 						<div class="radio">
@@ -54,34 +55,6 @@
 				</div>
 			</div>
 		</div>
-		<!---  The div below is non-semantic, for styling purposes -->
-		<div class="container main" id="phantom">
-			<div class="row">
-				<div class="col-md-12">
-					<h1><img src="img/whatshapLogo.png" id="mainLogo"></img></h1>
-					<p>Your NLC.</p>
-					<form class="navbar-form navbar-right" role="form">
-						<button type="submit" class="btn btn-default btn-custom">Sign Up</button>
-						<div class="radio">
-						    <label>
-						      <input type="radio" name="optionsRadios" id="userOption" value="user" checked>
-						      User
-						    </label>
-						  </div>
-						  <div class="radio">
-						    <label>
-						      <input type="radio" name="optionsRadios" id="businessOption" value="business">
-						      Business
-						    </label>
-						</div><br/>
-  						<div class="form-group">
-    						<input type="text" class="form-control" placeholder="Enter e-mail address . . .">
-  						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-		<!--  End of non-semantic div -->
 			
 			<div class="row">
 				<div>
@@ -119,7 +92,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<img id="logo" src="img/compass3.png"></img>
+					<img id="logo" src="img/compass.svg"></img>
 				</div>
 			</div>
 	</body>

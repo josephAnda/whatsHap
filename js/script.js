@@ -33,10 +33,10 @@
 			    if (scroll > 0) {
 			    	//console.log("This should work", model.navForm);
 			        model.navForm.addClass("taskbar-scroll");
-			        model.phantom.css({position: "relative"});
+			       // model.phantom.css({position: "relative"});
 			    } else {
 			        model.navForm.removeClass("taskbar-scroll");
-			        model.phantom.css({position: "fixed", visibility: "hidden"});  
+			        //model.phantom.css({position: "fixed", visibility: "hidden"});  
 			    }
 			})
 		}
