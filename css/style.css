@@ -1,11 +1,11 @@
 /*Style rules roughly in order of elements appearance on the page.  Media queries at the bottom*/
 
 body {
-	background-image: url('../img/japan.gif');
-	background-size: 1274px 940px;
+	
+	
 	color: white;
-	background-color: rgba(30, 55, 100, 1);
-	background-position:  0px 100px;
+	background-color: #00ADB5
+	
 }
 	
 h1 { 
