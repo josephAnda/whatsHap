@@ -99,7 +99,11 @@ form {
 	transition: background-color 0.5s ease, color .5s ease;
 }
 
-
+#whiteBar {
+	width:  90%;  
+	height: 20px;
+	background-color: #fff;
+}
 
 #socialMedia {
 	width: 50%;
