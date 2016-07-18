@@ -1,20 +1,37 @@
 /*Style rules roughly in order of elements appearance on the page.  Media queries at the bottom*/
 
 body {
-	
-	
+	color: #EEEEEE;
+	/*background: url('../img/compass.svg') no-repeat, #222831;*/
+	background-color: #222831;
+
+}
+
+#navForm  {
 	color: white;
-	background-color: #00ADB5
-	
+
 }
 	
 h1 { 
 	text-align: center;
 }		
 
-h1#greeting {
+.banner h1 {
 	font-size: 6em;
 	padding: 160px 200px 0px;
+
+}
+
+.banner a div {
+	border: 5px solid #EEEEEE;
+	width: 30%;
+	margin: 0 auto; 
+	margin-top: 30px;
+	text-align: center;
+	font-weight: bold;
+	padding:  12px;
+	color: #EEEEEE;
+	transition: background-color 0.5s ease, color .5s ease;
 }
 
 form {
@@ -27,8 +44,9 @@ form {
 .radio {
 	margin-right: 10px;
 }
-.btn-custom {
-    background-color: #4CAF50; /* Green */
+
+.btn {
+    background-color: #00ADB5; 
     border: none;
     color: white;
     padding: 15px 32px;
@@ -36,30 +54,11 @@ form {
     text-decoration: none;
     display: block;
     font-size: 16px;
-
 }
 
-.more {
-	
-	
-	border: 5px solid white;
-	text-align: center;
-	font-weight: bold;
-	padding:  12px;
-	color: #fff;
-	transition: background-color 0.5s ease, color .5s ease;
-
-}
-
-.more {
-	width: 30%;
-	margin: 0 auto; 
-	margin-top: 30px;
-}
-
-.more:hover {
-	background-color: #fff;
-	color: rgba(0, 0, 0, 1);
+.banner a div:hover {
+	background-color: #EEEEEE;
+	color: #222831;
 	transition: background-color 0.5s ease, color .5s ease;
 }
 
@@ -74,7 +73,7 @@ form {
 	text-align: center;
 }
 
-#mainLogo {
+#navForm img {
 	max-width: 200px;
 }
 
@@ -82,14 +81,22 @@ form {
 	position: fixed;
 	z-index: 1;
 	top: 0;
+}
 
+.bgimg-container img {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 150px;
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
 }
 
 .taskbar-scroll {
-	
-	background-color: rgba(0, 0, 0, .7);
+	background-color: rgba(86, 90, 97, .85);
+	color: #565A61;
 	transition: background-color 0.5s ease, color .5s ease;
-	
 }
 
 
@@ -109,22 +116,54 @@ a:hover {
 	text-decoration: none;
 }
 
+.mainContent {
+	padding-top: 5em;
+	width: 90%;
+	color: white;
+}
+
+.info {
+	background-color: rgba(0,173,181,.5);
+	/*background-color: #00ADB5;*/
+}
+
+.picture {
+	background-color: rgba(86,90,97,.5);
+	/*background-color: #565A61;*/
+	
+}
+
+.info p, .picture p {
+	padding: 8em 0 8em;
+}
+
 img#logo {
 	text-align: center;
 	max-height: 350px;
 	position: relative;
 	display: block;
 	margin: 0 auto;
+	margin-top: 5em;
 	bottom: 0em;
 }
 
 footer {
 	position : relative;
-    bottom : -27em;
-    height : 40px;
-    
+    bottom : 0em;
+    height : 5em;
     margin-left: 10px;
     font-size: .8em;
+}
+
+::-webkit-scrollbar {
+	width: 15px; 
+	height: 3px; 
+	background: #222831;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color:#EEEEEE; 
+	border: 1px solid black;
 }
 
 @media only screen and (max-width: 769px) and (min-width: 415px)  {
@@ -132,13 +171,14 @@ footer {
 		font-size: 4em;
 	}
 
-	#mainLogo {
+	#navForm img {
 		position: relative;
+		max-width: 50%;
 		float: left; 
 		margin-left: 20px;
 	}
 
-	#motto {
+	#navForm p {
 		display: none;
 	}
 
@@ -147,7 +187,9 @@ footer {
 		padding: 350px 0 0;
 		
 	}
-
+	.banner a div {
+		width: 50%;
+	}
 	img#logo {
 		max-height: 230px;
 	}
@@ -155,6 +197,7 @@ footer {
 	form.navbar-form { 
 		position: relative;
 		float: right;
+
 		/*margin-left: 20px;*/
 		}
 }
@@ -166,7 +209,7 @@ footer {
 
 	h1#greeting {
 		margin: 0 auto;
-		padding: 380px 0 0;
+		padding: 300px 0 0;
 		
 	}
 
@@ -174,9 +217,23 @@ footer {
 		max-height: 180px;
 	}
 
+	#navForm p {
+		display: none;
+	}
+
+	#navForm img {
+		max-width: 40%;
+		float: left;
+		margin-left: 15px;
+	}
+
 	form.navbar-form { 
 		position: relative;
-		float: left;
+		float: right;
 		margin-left: 20px;
+	}
+
+	.banner a div {
+		width: 50%;
 	}
 }
