@@ -18,7 +18,7 @@ h1 {
 
 .banner h1 {
 	font-size: 6em;
-	padding: 160px 200px 0px;
+	padding: 180px 200px 0px;
 
 }
 
@@ -46,7 +46,7 @@ form {
 }
 
 .btn {
-    background-color: #00ADB5; 
+    background-color: #FF33CC; 
     border: none;
     color: white;
     padding: 15px 32px;
@@ -74,8 +74,10 @@ form {
 
 }
 
-#navForm img {
+#whatshapLogo {
 	max-width: 200px;
+	top: 0;
+	margin: 0 auto;
 }
 
 #navForm {
@@ -92,7 +94,7 @@ form {
     position: absolute;
     z-index: -1;
     left: 0;
-    top: 150px;
+    top: 250px;
     width: 100%;
     height: auto;
     opacity: 0.5;
@@ -114,9 +116,9 @@ form {
 
 #socialMedia {
 	width: 50%;
-	margin: 0 auto;
-	margin-top: 10px;
-	text-align: center;
+	position: absolute;
+	margin-left: 2em;
+	text-align: left;
 }
 
 #socialMedia a {
