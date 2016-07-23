@@ -37,12 +37,16 @@ h1 {
 form {
 	margin-bottom: 10px;
 	position: absolute;
-	top: 0;
+	top: 27px;
 	right: 10px;
 }
 
+form input {
+	display: inline;
+
+}
 .radio {
-	margin-right: 10px;
+	max-width:  50%;
 }
 
 .btn {
@@ -75,8 +79,8 @@ form {
 }
 
 #whatshapLogo {
-	max-width: 200px;
-	top: 0;
+	width: 400px;
+	top: 20;
 	margin: 0 auto;
 }
 
@@ -87,7 +91,11 @@ form {
 }
 
 #navForm p {
-	margin-top: 20px;
+	margin-top: 0px;
+}
+
+#navForm h1 {
+	margin-bottom: 0;
 }
 
 .bgimg-container img {
@@ -108,7 +116,7 @@ form {
 
 #whiteBar {
 	width:  90%;  
-	height: 20px;
+	height: 1px;
 	background-color: #fff;
 	margin: 0 auto;
 	border-radius: 5px;
