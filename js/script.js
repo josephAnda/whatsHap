@@ -4,7 +4,7 @@
 //[!!]  Occupy top of page with logo
 //[!!]  Make the signup button 'louder'
 //[  ]  Incorporate transitioning images (ask Manny and Daniel for ideas)
-//[  ]  Add function to add an inline display class when viewport width shrinks 
+//[!!]  Integrate responsive form 
 
 (function() {
 

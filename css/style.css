@@ -7,6 +7,7 @@ body {
 
 }
 
+
 #navForm  {
 	color: white;
 	padding: 0;
@@ -38,15 +39,14 @@ form {
 	margin-bottom: 10px;
 	position: absolute;
 	top: 27px;
-	right: 10px;
+	right: 2em;
 }
 
 /*  [  ]  Wire up the button in the div below
-    [  ]  Change the visibility settings for responsive screens */
+    [!!]  Change the visibility settings for responsive screens */
 #responsiveForm {
 	display: none;
 }
-
 
 }
 .radio {
@@ -102,10 +102,6 @@ form {
 	margin-bottom: 0;
 }
 
-
-
-
-
 .bgimg-container img {
     position: absolute;
     z-index: -1;
@@ -133,7 +129,7 @@ form {
 #socialMedia {
 	/*width: 50%;*/
 	position: absolute;
-	margin-left: 2em;
+	margin-left: 2.5em;
 	text-align: left;
 }
 
@@ -222,6 +218,8 @@ footer {
 	
 	.btn {
 		padding: .6em .6em;
+		margin-top: 2.8em;
+		margin-right: .5em;
 		
 	}
 
@@ -244,7 +242,7 @@ footer {
 	
 	#socialMedia {
 		position: relative;
-		margin-top:  1em;
+		margin-top:  4em;
 		/*margin:  0 auto;*/
 	
 	}
@@ -287,6 +285,7 @@ footer {
 
 	#responsiveForm button {
 		margin: 0 auto;
+		margin-top:  .4em;
 	} 
 
 	.btn {
@@ -294,17 +293,14 @@ footer {
 		
 	}
 
-
-
 	.banner a div {
 		width: 50%;
 	}
 
-	
 	#socialMedia {
 		
 		position: relative;
-		margin-top: 2.5em;
+		margin-top: 3em;
 		/*display: block;
 		margin: 0 auto;
 		width:  300px;
