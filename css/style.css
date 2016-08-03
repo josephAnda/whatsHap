@@ -41,8 +41,12 @@ form {
 	right: 10px;
 }
 
-form input {
-	display: inline;
+/*  [  ]  Wire up the button in the div below
+    [  ]  Change the visibility settings for responsive screens */
+#responsiveForm {
+	display: none;
+}
+
 
 }
 .radio {
@@ -98,6 +102,10 @@ form input {
 	margin-bottom: 0;
 }
 
+
+
+
+
 .bgimg-container img {
     position: absolute;
     z-index: -1;
@@ -123,7 +131,7 @@ form input {
 }
 
 #socialMedia {
-	width: 50%;
+	/*width: 50%;*/
 	position: absolute;
 	margin-left: 2em;
 	text-align: left;
@@ -187,6 +195,16 @@ footer {
 	border: 1px solid black;
 }
 
+@media only screen and (max-width: 800px) {
+	#defaultForm {
+		visibility: hidden;
+	}
+
+	#responsiveForm {
+		display: inline;
+	}
+}
+
 @media only screen and (max-width: 769px) and (min-width: 415px)  {
 	h1, h1#greeting {
 		font-size: 4em;
@@ -195,8 +213,16 @@ footer {
 	#navForm img {
 		position: relative;
 		max-width: 40%;
-		float: left; 
-		margin-left: 20px;
+		margin: 0 auto;
+	}
+
+	form { 
+	  top: 1em;
+	}
+	
+	.btn {
+		padding: .6em .6em;
+		
 	}
 
 	#navForm p {
@@ -212,15 +238,21 @@ footer {
 		width: 50%;
 	}
 	img#logo {
-		max-height: 230px;
+		max-height: 180px;
+		text-align: center;
+	}
+	
+	#socialMedia {
+		position: relative;
+		margin-top:  1em;
+		/*margin:  0 auto;*/
+	
 	}
 
-	form.navbar-form { 
-		position: relative;
-		float: right;
-
-		/*margin-left: 20px;*/
-		}
+	#socialMedia img {
+		max-width: 2.7em;
+	}
+	
 }
 
 @media only screen and (max-width: 414px) {
@@ -236,7 +268,9 @@ footer {
 
 	img#logo {
 		max-height: 180px;
+		text-align: center;
 	}
+
 
 	#navForm p {
 		display: none;
@@ -244,17 +278,41 @@ footer {
 
 	#navForm img {
 		max-width: 40%;
-		float: left;
-		margin-left: 15px;
+		margin: 0 auto;
 	}
 
-	form.navbar-form { 
-		position: relative;
-		float: right;
-		margin-left: 20px;
+	form { 
+	  top: 1em;
 	}
+
+	#responsiveForm button {
+		margin: 0 auto;
+	} 
+
+	.btn {
+		padding: .6em .6em;
+		
+	}
+
+
 
 	.banner a div {
 		width: 50%;
 	}
+
+	
+	#socialMedia {
+		
+		position: relative;
+		margin-top: 1em;
+		/*display: block;
+		margin: 0 auto;
+		width:  300px;
+		*/
+	}
+
+	#socialMedia img {
+		max-width: 2.7em;
+	}
+	
 }

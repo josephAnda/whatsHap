@@ -16,6 +16,7 @@
 [  ]  Clean up the CSS naming and file
 [  ]  Link 'Find out More' to a form of sorts
 [  ]  Replace email field with a modal that the pink button links to (at least for mobile)
+[  ]  Create a single responsive modal-button for the resized screens 
 -->
 
 <!DOCTYPE html>
@@ -34,7 +35,7 @@
 		<div class="container main" id="navForm">
 			<div class="row">
 				<div class="">
-					<div>
+					
 						<div id="socialMedia">
 					    	<a href="http://josephanda.github.io">
 					    		<img src="img/twitter.png" alt="twitterIcon">
@@ -49,9 +50,10 @@
 					    		<img src="img/comments.png" alt="commentsIcon">
 					    	</a>
 				    	</div>
-					</div>
+					
 					<h1><img id="whatshapLogo" src="img/whatshapLogo.png" alt="whatshapLogo"></img></h1>
-					<form class="navbar-form navbar-right" role="form">
+
+					<form class="navbar-form navbar-right" id="defaultForm" role="form">
 						<button type="submit" class="btn btn-default">Join Our Beta</button>
 						<div class="radio">
 						    <label>
@@ -68,6 +70,9 @@
   						<div class="form-group">
     						<input type="text" class="form-control" placeholder="Enter e-mail address . . .">
   						</div>
+					</form>
+					<form class="" id="responsiveForm">
+						<button type="submit" class="btn btn-default">Join Our Beta</button>
 					</form>
 				</div>
 			</div>
