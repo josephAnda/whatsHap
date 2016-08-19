@@ -5,6 +5,8 @@
 //[!!]  Make the signup button 'louder'
 //[  ]  Incorporate transitioning images (ask Manny and Daniel for ideas)
 //[!!]  Integrate responsive form 
+//[  ]  Implement mobile-responsive form fields
+
 
 (function() {
 
