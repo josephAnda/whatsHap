@@ -42,6 +42,10 @@ form {
 	right: 2em;
 }
 
+form a {
+	color: #fff;
+}
+
 /*  [  ]  Wire up the button in the div below
     [!!]  Change the visibility settings for responsive screens */
 #responsiveForm {

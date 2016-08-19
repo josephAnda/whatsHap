@@ -26,7 +26,7 @@
 		init: function() {
 			console.log("view initialized");  //<--also for debugging
 			view.scrollLock();
-			view.makeInlineForm();
+			//view.makeInlineForm();
 		},
 		scrollLock: function() {
 			$(window).scroll(function() {    
