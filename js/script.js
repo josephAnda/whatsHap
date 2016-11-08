@@ -28,7 +28,21 @@
 		init: function() {
 			console.log("view initialized");  //<--also for debugging
 			view.scrollLock();
+			view.registerUser();
+			
 			//view.makeInlineForm();
+		},
+		registerUser: function() {
+			$('#join').click(function()  {
+			     $.ajax({
+				      url:'emailScript.php'
+				      method:'post',
+				      data : $('#defaultForm').serialize(),
+				      success:function()  {
+				      	console.log("serialization of form data successful");
+				      }
+			      })
+			})	
 		},
 		scrollLock: function() {
 			$(window).scroll(function() {    

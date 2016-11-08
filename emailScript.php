@@ -1,0 +1,44 @@
+<?php
+
+	error_reporting(E_STRICT | E_ALL);
+	date_default_timezone_set('Etc/UTC');
+	// $email and $messageText are the data that is being
+	// posted to this page from our html contact form.  Ideally 
+	//  we can grab data from the form in later implementaitons 
+
+	$email = $_REQUEST['email'];
+	
+
+	require_once 'swiftMailer/swiftmailer./lib/swift_required.php';
+	echo 'Debug line 13 (require completed) <br />';
+	// Create the Transport.  Using google's SMTP requires a gmail account that allows less secure apps to access the sign in credentials.  This is not the default setting and must be updated in 'Sign in and Security' in the 'My Account' section of the settings portion 
+	$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, 'ssl')
+	  ->setUsername('orenmurasaki@gmail.com')
+	  ->setPassword('****')  //  <-- [  ]  Hash this
+	;
+
+	echo 'Debug line 20 (transport set) <br />';
+
+	// Create the message.  Swiftmailer has a variety of methods to easily add information.
+	// NOTE:  Try initializing some of these properties with the initializing of the message
+	$mailer = Swift_Mailer::newInstance($transport);
+	$message = Swift_Message::newInstance()
+
+		// Give the message a subject
+		->setSubject('New User Signup Test')
+		// Set the From address with an associative array
+		->setFrom(array('orenmurasaki@gmail.com' => 'Joseph Anda'))
+		// Set the To addresses with an associative array
+		->setTo(array('orenmurasaki@gmail.com' => 'Joe'))
+		// TESTING FEATURE	Set CC . . . to you guys' emails
+		->setCc(array('Ddagman@whatshap.net' => 'Daniel', 'Mkernen@whatshap.net' => 'Manny'))
+		// [  ] See if you can set the message using the previously referenced variable 
+		->setBody('A new user has signed up for your site:  ' + $email);
+	;
+	echo 'Debug line 34 (fields set set) <br />';
+
+	$result = $mailer->send($message);
+	echo $result;
+	echo 'line 38 <br />';
+
+?>
