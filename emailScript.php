@@ -1,4 +1,6 @@
 <?php
+	//  [  ]  Cross origin requests prohibit local tests from accessing the php.  Right now, we're 
+	//  	  considering a)  using Mozilla to test and b) using a dummy email with a fake password
 
 	error_reporting(E_STRICT | E_ALL);
 	date_default_timezone_set('Etc/UTC');
