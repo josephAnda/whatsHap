@@ -35,7 +35,7 @@
 		// TESTING FEATURE	Set CC . . . to you guys' emails
 		->setCc(array('Ddagman@whatshap.net' => 'Daniel', 'Mkernen@whatshap.net' => 'Manny'))
 		// [  ] See if you can set the message using the previously referenced variable 
-		->setBody('A new user has signed up for your site:  ' + $email);
+		->setBody($email);
 	;
 	echo 'Debug line 34 (fields set set) <br />';
 
