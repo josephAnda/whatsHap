@@ -151,8 +151,10 @@ a:hover {
 	color: white;
 }
 
-.mainContent div {
-	max-height:  17em;
+@media only screen and (min-width: 992px) {
+	.mainContent div {
+		max-height:  17em;
+	}
 }
 
 .info {
@@ -166,7 +168,7 @@ a:hover {
 	
 }
  /*  Lets make the elements referenced below responsive */
- 
+
 .picture img {
 	max-width: 100%;
 	max-height:  17em;
