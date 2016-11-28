@@ -146,9 +146,13 @@ a:hover {
 }
 
 .mainContent {
-	padding-top: 5em;q
+	padding-top: 5em;
 	width: 90%;
 	color: white;
+}
+
+.mainContent div {
+	max-height:  17em;
 }
 
 .info {
@@ -160,6 +164,12 @@ a:hover {
 	background-color: rgba(86,90,97,.5);
 	/*background-color: #565A61;*/
 	
+}
+ /*  Lets make the elements referenced below responsive */
+ 
+.picture img {
+	max-width: 100%;
+	max-height:  17em;
 }
 
 .info p, .picture p {
