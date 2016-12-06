@@ -132,7 +132,7 @@ form a {
 
 #socialMedia {
 	/*width: 50%;*/
-	position: absolute;
+	
 	margin-left: 2.5em;
 	text-align: left;
 }
@@ -214,6 +214,10 @@ footer {
 
 	#responsiveForm {
 		display: inline;
+	}
+
+	form {
+		margin-top: 5.6em;
 	}
 }
 
