@@ -164,10 +164,14 @@ a:hover {
 .info {
 	background-color: rgba(0,173,181,.5);
 	/*background-color: #00ADB5;*/
+	border-style: solid;
+	border-width: medium;
 }
 
 .picture {
 	background-color: rgba(86,90,97,.5);
+	border-style: solid;
+	border-width: medium;
 	/*background-color: #565A61;*/
 	
 }
@@ -178,6 +182,7 @@ a:hover {
 	max-height:  17em;
 	width: 100%;
 	margin: 0 auto;
+	padding-bottom: 1em;
 }
 
 .info p, .picture p {
