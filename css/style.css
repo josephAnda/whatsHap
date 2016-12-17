@@ -135,11 +135,15 @@ form a {
 	
 	margin-left: 2.5em;
 	text-align: left;
+	position: absolute;
+	top: 8em;
 }
 
 #socialMedia a {
 	margin: 0 auto;
 }
+
+
 
 a:hover {
 	text-decoration: none;
@@ -172,6 +176,8 @@ a:hover {
 .picture img {
 	max-width: 100%;
 	max-height:  17em;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .info p, .picture p {
@@ -218,6 +224,11 @@ footer {
 
 	form {
 		margin-top: 5.6em;
+	}
+
+	#socialMedia {
+		position: relative;
+		top: 0em;
 	}
 }
 
