@@ -132,14 +132,18 @@ form a {
 
 #socialMedia {
 	/*width: 50%;*/
-	position: absolute;
+	
 	margin-left: 2.5em;
 	text-align: left;
+	position: absolute;
+	top: 8em;
 }
 
 #socialMedia a {
 	margin: 0 auto;
 }
+
+
 
 a:hover {
 	text-decoration: none;
@@ -160,10 +164,14 @@ a:hover {
 .info {
 	background-color: rgba(0,173,181,.5);
 	/*background-color: #00ADB5;*/
+	border-style: solid;
+	border-width: medium;
 }
 
 .picture {
 	background-color: rgba(86,90,97,.5);
+	border-style: solid;
+	border-width: medium;
 	/*background-color: #565A61;*/
 	
 }
@@ -172,6 +180,9 @@ a:hover {
 .picture img {
 	max-width: 100%;
 	max-height:  17em;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 1em;
 }
 
 .info p, .picture p {
@@ -214,6 +225,15 @@ footer {
 
 	#responsiveForm {
 		display: inline;
+	}
+
+	form {
+		margin-top: 5.6em;
+	}
+
+	#socialMedia {
+		position: relative;
+		top: 0em;
 	}
 }
 
