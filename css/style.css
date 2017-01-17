@@ -1,4 +1,5 @@
 /*Style rules roughly in order of elements appearance on the page.  Media queries at the bottom*/
+/*[  ]  'white' color for the list items is not showing up as white in Chrome (and potentially other browsers) */
 
 body {
 	color: #EEEEEE;
@@ -17,17 +18,21 @@ h1 {
 	text-align: center;
 }		
 
-.banner h1 {
-	font-size: 6em;
-	padding: 180px 200px 0px;
+.info li {
+	color: white;
+}
 
+.banner h1 {
+    font-size: 5em;
+    padding: 320px 100px 0px;
 }
 
 .banner a div {
 	border: 5px solid #EEEEEE;
 	width: 30%;
 	margin: 0 auto; 
-	margin-top: 30px;
+	margin-top: 5em;
+	margin-bottom: 12em;
 	text-align: center;
 	font-weight: bold;
 	padding:  12px;
@@ -109,9 +114,10 @@ form a {
 .bgimg-container img {
     position: absolute;
     z-index: -1;
-    left: 0;
+
+    left: 30%;
     top: 250px;
-    width: 100%;
+    width: 40%;
     height: auto;
     opacity: 0.5;
 }
