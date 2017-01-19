@@ -224,6 +224,13 @@ footer {
 	border: 1px solid black;
 }
 
+@media only screen and (max-width: 990px) {
+	/*  Control padding in info elements for mobile views */
+	.info p, .picture p {
+		padding: 4em 0 4em;
+	}
+}
+
 @media only screen and (max-width: 800px) {
 	#defaultForm {
 		visibility: hidden;
@@ -241,6 +248,7 @@ footer {
 		position: relative;
 		top: 0em;
 	}
+
 }
 
 @media only screen and (max-width: 769px) and (min-width: 415px)  {
