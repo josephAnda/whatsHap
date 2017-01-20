@@ -34,6 +34,7 @@
 		},
 		registerUser: function() {
 			$('#join').click(function()  {
+				console.log(" 'registerUser' has been run.")
 			     $.ajax({
 				      url:'emailScript.php',
 				      method:'post',
