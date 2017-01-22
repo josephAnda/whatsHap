@@ -48,7 +48,7 @@
 		scrollLock: function() {
 			$(window).scroll(function() {    
 			    var scroll = $(window).scrollTop();
-			    console.log(scroll);  // <--- Useful for debugging the scroll-dependent menu-fixing 
+			    //console.log(scroll);  // <--- Useful for debugging the scroll-dependent menu-fixing 
 			    if (scroll > 0) {
 			    	//console.log("This should work", model.navForm);
 			        model.navForm.addClass("taskbar-scroll");
