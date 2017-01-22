@@ -1,10 +1,10 @@
-//[!!]  Build this with MVC
+
 //[  ]  Stop mixing font size specification types (like px and em)
-//[!!]  Format footer text properly  
-//[!!]  Occupy top of page with logo
-//[!!]  Make the signup button 'louder'
+
+
+
 //[  ]  Incorporate transitioning images (ask Manny and Daniel for ideas)
-//[!!]  Integrate responsive form 
+
 //[  ]  Implement mobile-responsive form fields
 
 
