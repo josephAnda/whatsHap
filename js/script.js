@@ -2,6 +2,7 @@
 //[  ]  Stop mixing font size specification types (like px and em)
 //[  ]  Incorporate transitioning images (ask Manny and Daniel for ideas)
 //[  ]  Implement mobile-responsive form fields
+//[  ]  Get a handle of gh-pages
 
 
 (function() {
