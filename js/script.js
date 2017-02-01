@@ -2,6 +2,7 @@
 //[  ]  Stop mixing font size specification types (like px and em)
 //[  ]  Incorporate transitioning images (ask Manny and Daniel for ideas)
 //[  ]  Implement mobile-responsive form fields
+//[  ]  Test e.preventDefault in local environment
 
 
 (function() {
@@ -30,7 +31,7 @@
 			$('#join').click(function(e)  {
 
 				console.log(" 'registerUser' has been run.");
-				e.preventDefault();
+				e.preventDefault();  //  <--You might be on to something
 			     $.ajax({
 
 			     	  
@@ -47,7 +48,7 @@
         				console.log(thrownError);
       				  }
 			      })
-			    return false;
+			    //return false;
 			})	
 		},
 		scrollLock: function() {
