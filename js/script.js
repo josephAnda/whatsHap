@@ -33,7 +33,7 @@
 			     $.ajax({
 
 			     	  
-				      url:'/emailScript.php', // <--NOTE:  This path name needs to *remove* the backslash and everything leading up to it for this request to work locally
+				      url:'/emailScript.php', 
 				      method:'post',
 				      data : $('#defaultForm').serialize(),
 				      success:function()  {
