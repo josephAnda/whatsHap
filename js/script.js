@@ -2,8 +2,6 @@
 //[  ]  Stop mixing font size specification types (like px and em)
 //[  ]  Incorporate transitioning images (ask Manny and Daniel for ideas)
 //[  ]  Implement mobile-responsive form fields
-//[  ]  Get a handle of gh-page
-
 
 
 (function() {
@@ -14,7 +12,7 @@
 
 
 		navForm: $('#navForm'),
-		phantom: $('#phantom'),  // <---This is to keep the non-taskbar content from re-flowing once the taskbar locks via position: fixed
+		phantom: $('#phantom'),  // <---  Masks effect of re-flowing for locked taskbar on scroll
 		signUpForm: $('#responsiveForm')
 
 	};
@@ -26,22 +24,24 @@
 			view.scrollLock();
 			view.registerUser();
 			
-			
 		},
 		registerUser: function() {
+
 			$('#join').click(function()  {
+
 				console.log(" 'registerUser' has been run.");
 			     $.ajax({
+
 				      url:'emailScript.php',
 				      method:'post',
 				      data : $('#defaultForm').serialize(),
 				      success:function()  {
 				      	console.log("serialization of form data successful");
 				      },
-				      //  So the function below is to help diagnose this error in production 
 				      error: function (xhr, ajaxOptions, thrownError) {
-        				console.log(xhr.status);
-        				console.log(xhr.responseText);
+				      	console.log(xhr); 
+        				console.log(ajaxOptions);
+        				console.log(thrownError);
       				  }
 			      })
 			})	
@@ -55,6 +55,7 @@
 			        model.navForm.addClass("taskbar-scroll");
 			       
 			    } else {
+
 			        model.navForm.removeClass("taskbar-scroll");
 			        
 			    }
