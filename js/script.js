@@ -27,9 +27,10 @@
 		},
 		registerUser: function() {
 
-			$('#join').click(function()  {
+			$('#join').click(function(e)  {
 
 				console.log(" 'registerUser' has been run.");
+				e.preventDefault();
 			     $.ajax({
 
 			     	  
@@ -46,6 +47,7 @@
         				console.log(thrownError);
       				  }
 			      })
+			    return false;
 			})	
 		},
 		scrollLock: function() {
