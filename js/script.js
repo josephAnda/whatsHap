@@ -2,7 +2,8 @@
 //[  ]  Stop mixing font size specification types (like px and em)
 //[  ]  Incorporate transitioning images (ask Manny and Daniel for ideas)
 //[  ]  Implement mobile-responsive form fields
-//[  ]  Get a handle of gh-pages
+//[  ]  Get a handle of gh-page
+
 
 
 (function() {
@@ -36,7 +37,12 @@
 				      data : $('#defaultForm').serialize(),
 				      success:function()  {
 				      	console.log("serialization of form data successful");
-				      }
+				      },
+				      //  So the function below is to help diagnose this error in production 
+				      error: function (xhr, ajaxOptions, thrownError) {
+        				console.log(xhr.status);
+        				console.log(xhr.responseText);
+      				  }
 			      })
 			})	
 		},
