@@ -32,13 +32,15 @@
 				console.log(" 'registerUser' has been run.");
 			     $.ajax({
 
-				      url:'emailScript.php',
+			     	  
+				      url:'/emailScript.php', // <--NOTE:  This path name needs to *remove* the backslash and everything leading up to it for this request to work locally
 				      method:'post',
 				      data : $('#defaultForm').serialize(),
 				      success:function()  {
 				      	console.log("serialization of form data successful");
 				      },
 				      error: function (xhr, ajaxOptions, thrownError) {
+				      	
 				      	console.log(xhr); 
         				console.log(ajaxOptions);
         				console.log(thrownError);
