@@ -31,7 +31,7 @@
 			$('#join').click(function(e)  {
 
 				console.log(" 'registerUser' has been run.");
-				e.preventDefault();  //  <--You might be on to something
+				e.preventDefault();  //  <--Necessary for ajax request to succeed in live deployment
 			     $.ajax({
 
 			     	  
@@ -48,7 +48,7 @@
         				console.log(thrownError);
       				  }
 			      })
-			    //return false;
+			    //return false;	
 			})	
 		},
 		scrollLock: function() {

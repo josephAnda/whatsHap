@@ -1,5 +1,5 @@
-/*Style rules roughly in order of elements appearance on the page.  Media queries at the bottom*/
-/*[  ]  'white' color for the list items is not showing up as white in Chrome (and potentially other browsers) */
+/
+/*'white' color for the list items is not showing up as white in Chrome (and potentially other browsers) */
 
 body {
 	color: #EEEEEE;
@@ -60,8 +60,7 @@ form a {
 	color: #fff;
 }
 
-/*  [  ]  Wire up the button in the div below
-    [!!]  Change the visibility settings for responsive screens */
+
 #responsiveForm {
 	display: none;
 }
