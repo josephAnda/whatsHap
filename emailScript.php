@@ -14,7 +14,10 @@
 	require_once 'swiftMailer/swiftmailer./lib/swift_required.php';
 	echo 'Debug line 13 (require completed) <br />';
 	// Create the Transport.  Using google's SMTP requires a gmail account that allows less secure apps to access the sign in credentials.  This is not the default setting and must be updated in 'Sign in and Security' in the 'My Account' section of the settings portion 
-	$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 587, 'ssl')  //  <--changed from port 465 to 587
+	$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, 'ssl')  //  <--changed from port 465 to 587, and changed encryption from ssl to tls.  Changed back for local testing 
+	//  $transport = Swift_SendmailTransport::newInstance('/usr/sbin/sendmail -bs');
+	//   ^The line above contains an alternate transport type in the debugging effortf
+
 	  ->setUsername('whatshapinfo@gmail.com')
 	  ->setPassword('JDMourdomain123')  //  <-- [  ]  Hash this
 	;
