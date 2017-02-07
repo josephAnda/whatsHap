@@ -1,7 +1,5 @@
 
 //[  ]  Stop mixing font size specification types (like px and em)
-//[  ]  Incorporate transitioning images (ask Manny and Daniel for ideas)
-//[  ]  Implement mobile-responsive form fields
 //[  ]  Test e.preventDefault in local environment
 
 
@@ -10,7 +8,6 @@
 	"use strict";
 
 	var model = {
-
 
 		navForm: $('#navForm'),
 		phantom: $('#phantom'),  // <---  Masks effect of re-flowing for locked taskbar on scroll
@@ -31,10 +28,9 @@
 			$('#join').click(function(e)  {
 
 				console.log(" 'registerUser' has been run.");
-				e.preventDefault();  //  <--Necessary for ajax request to succeed in live deployment
+				e.preventDefault();  //  <--Necessary for ajax request to succeed in live deployment (but why?)
 			     $.ajax({
 
-			     	  
 				      url:'/emailScript.php', 
 				      method:'post',
 				      data : $('#defaultForm').serialize(),
