@@ -20,7 +20,7 @@
 	//  ->setUsername('whatshapinfo@gmail.com')
 	  ->setUsername('Ddagman@whatshap.net')
 	  //->setPassword('JDMourdomain123')  //  <-- [  ]  Hash this
-	  ->setPassword('JDMwhatshap123')  //  <-- [  ]  Hash this
+	  ->setPassword('Danuha91189')  //  <-- [  ]  Hash this
 	;
 
 	echo 'Debug line 20 (transport set) <br />';
