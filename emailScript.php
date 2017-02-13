@@ -10,17 +10,24 @@
 	// Create the Transport.  Using google's SMTP requires a gmail account that allows less secure apps to access 
 	// the sign in credentials.  This is not the default setting and must be updated in 'Sign in and Security' in 
 	// the 'My Account' section of the settings portion 
-	$transport = Swift_SmtpTransport::newInstance('localhost', 25)
+	//  [  ]  
+	$transport = Swift_SmtpTransport::newInstance('localhost', 25)  // tried smtpout.secureserver.net, relay-hosting.secureserver.net, port 80, etc.
+	//  Results in 250 error code, 111 connection refused, and recently it's just failed to authenticatae.
 	//$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, 'ssl')  //  <--changed from port 465 to 587, and changed encryption from ssl to tls.  Changed back for local testing 
 	//  Need GoDaddy's SMTP server and Port for the command above in the hosted environment
 	//  ('smtpout.secureserver.net', 465, 'ssl') was refused with #111 error code
 	//  $transport = Swift_SendmailTransport::newInstance('/usr/sbin/sendmail -bs');
 	//   ^The line above contains an alternate transport type in the debugging effortf
 
-	//  ->setUsername('whatshapinfo@gmail.com')
-	  ->setUsername('Ddagman@whatshap.net')
+	  //->setUsername('whatshapinfo@gmail.com')
+	  //->setUsername('Ddagman@whatshap.net')
 	  //->setPassword('JDMourdomain123')  //  <-- [  ]  Hash this
-	  ->setPassword('Danuha91189')  //  <-- [  ]  Hash this
+	  //->setPassword('Danuha91189')  //  <-- [  ]  Hash this
+	  //Furthermore, lets confirm the username and password.  From the readout
+	  //in the network error it seems that the only problem is authenticating the
+	  //user, wheras before (using the gmail smtp and various others) I was not even
+	  //able to get a connection acknowledged from the server (presumably it was blocked
+	  // or non-existant)
 	;
 
 	echo 'Debug line 20 (transport set) <br />';
