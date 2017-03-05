@@ -29,7 +29,7 @@
 		// Set the To addresses with an associative array
 		->setTo(array('orenmurasaki@gmail.com' => 'Joe'))
 		// TESTING FEATURE	Set CC . . . to you guys' emails
-		->setCc(array('Ddagman@whatshap.net' => 'Daniel', 'Mkernen@whatshap.net' => 'Manny'))
+		->setCc(array('Ddagman@whatshap.net' => 'Daniel', 'Mkernen@whatshap.net' => 'Manny', 'janda@lydianlink.com' => 'Joseph'))
 		// [  ] See if you can set the message using the previously referenced variable 
 		->setBody($email);
 	;
