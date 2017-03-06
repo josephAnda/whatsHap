@@ -1,10 +1,4 @@
 
-/*
-
-[  ]  Fix the blocked text at the bottom of the page 
-
-*/
-
 body {
 	color: #EEEEEE;
 	/*background: url('../img/compass.svg') no-repeat, #222831;*/
@@ -195,7 +189,7 @@ a:hover {
 	/*background-color: #565A61;*/
 	
 }
- /*  Lets make the elements referenced below responsive */
+
 
 /*  div to center .picture img */
 
@@ -206,12 +200,9 @@ a:hover {
 }
 
 .picture img {
-	/*max-width: 100%;*/
 	width: 31em;
 	max-width: 100%;
 	max-height:  17em;
-	/*width: 100%;*/
-	
 	margin: 0 auto;
 	padding-bottom: 1em;
 }
