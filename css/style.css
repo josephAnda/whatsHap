@@ -13,11 +13,28 @@ p#hiddenAnchor {
 	color: #222831;
 }
 
+/*  [  ]  It would be nice to find a strategy to remove these very similar padding rules */
+p#whatshapIs, p#whatshapOffers {
+	padding: 2em 0 2em;
+}
+
+p#whatshapEnvisions {
+	padding: 2em 0 1em;
+}
+
+.info p, .picture p {
+	padding: 2em 0 8em;
+}
+
 #navForm  {
 	color: white;
 	padding: 0;
 }
-	
+
+ul {
+	margin-bottom: 5em;
+}	
+
 h1 { 
 	text-align: center;
 }		
@@ -209,9 +226,7 @@ a:hover {
 	padding-top: 2em;
 }
 
-.info p, .picture p {
-	padding: 8em 0 8em;
-}
+
 
 img#logo {
 	text-align: center;
