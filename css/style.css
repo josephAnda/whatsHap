@@ -6,9 +6,10 @@ body {
 
 }
 
+/*  The hidden anchor below controls the distance between the boxes and the 'Learn More' button */
 p#hiddenAnchor {
 	
-	margin-bottom: 82px;
+	margin-bottom: -320px;
 	color: #222831;
 }
 
@@ -122,7 +123,7 @@ form a {
     z-index: -1;
 
     left: 20%;
-    top: 32px;
+    top: 180px;
     width: 60%;
     height: auto;
     opacity: 0.5;
@@ -200,11 +201,12 @@ a:hover {
 }
 
 .picture img {
-	width: 31em;
+	width: 26em;
 	max-width: 100%;
-	max-height:  17em;
+	max-height:  18em;
 	margin: 0 auto;
-	padding-bottom: 1em;
+	padding-bottom: 2em;
+	padding-top: 2em;
 }
 
 .info p, .picture p {
