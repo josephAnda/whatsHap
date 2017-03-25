@@ -31,6 +31,8 @@ p#whatshapEnvisions {
 	padding: 0;
 }
 
+
+
 ul {
 	margin-bottom: 5em;
 }	
@@ -140,7 +142,7 @@ form a {
     z-index: -1;
 
     left: 20%;
-    top: 180px;
+    top: 230px;
     width: 60%;
     height: auto;
     opacity: 0.5;
@@ -185,7 +187,9 @@ a:hover {
 	color: white;
 }
 
-
+a div.learnMore {
+	margin-bottom: 482px;
+}
 
 @media only screen and (min-width: 992px) {
 	.mainContent div {
