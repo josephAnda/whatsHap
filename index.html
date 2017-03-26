@@ -37,28 +37,20 @@
 						<button type="submit" class="btn btn-default" class="join">
 							<a>Join Our Beta</a>
 						</button>
-						<div class="radio">
-						    <label>
-						      <input type="radio" name="userOption" id="userOption" value="user" checked>
-						      User
-						    </label>
-						  </div>
-						  <div class="radio">
-						    <label>
-						      <input type="radio" name="businessOption" id="businessOption" value="business">
-						      Business
-						    </label>
-						</div><br/>
+						<br/>
 						
   						<div class="form-group">
     						<input type="text" name="email" class="form-control" placeholder="Enter e-mail address . . .">
   						</div>
 					</form>
-					<form class="" id="responsiveForm" enctype="multipart/form-data" name="EmailTestForm" enctype="text/plain" role="form">
+					<!--form class="" id="responsiveForm" enctype="multipart/form-data" name="EmailTestForm" enctype="text/plain" role="form">
 						<button type="submit" class="btn btn-default" class="join">
 							<a>Join Our Beta</a>
 						</button>
-					</form>
+						<div class="form-group">
+    						<input type="text" name="email" class="form-control" placeholder="Enter e-mail address . . .">
+  						</div>
+					</form-->
 				</div>
 			</div>
 			<div id="whiteBar">
@@ -67,29 +59,29 @@
 		</div>
 		<div class="container banner">
 			<div class="bgimg-container">
-				<img src="img/compass.svg" align="middle"></img>
+				<img id="compPic" src="img/compass.svg" align="middle"></img>
 			</div>	
 			<div class="row">
 				<div>
 					<h1 id="greeting"> Your Nightlife Compass </h1>
 				</div>
 			</div>
-			<div class="row">
-				<a href="#hiddenAnchor" id="this">
+			<div class="row" style="margin-bottom: 20px;">
+				<a href="#this" id="this">
 					<div class="learnMore">Learn more</div>
 
 				</a>
-				<p id="hiddenAnchor">test</p>
+				
 			</div>
 			
 		</div>
-		
+			<p id="hiddenAnchor">test</p>
 			<div class="container mainContent">
 				<div class="row">
 					<div class="col-md-6 info" id="anchor1">
 						<h4>Whatshap <b>Is</b>:</h4>
-						<p id="whatshapEnvisions">Your <b>Nightlife Compass</b> using <b>Real Time Ratings</b></p>
-						<ul>
+						<p id="whatshapIs">Your <b>Nightlife Compass</b> using <b>Real Time Ratings</b></p>
+						<ul id="isList">
 							<li>Instantly find the most happening place based on up to the minute ratings</li>
 							<li style="color: rgba(0,173,181,0)">I want to make it as simple and clear as possible</li>
 							<li style="color: rgba(0,173,181,0)">Instantly find the most happening place based on up to the minute ratings</li>
@@ -140,7 +132,8 @@
 						<h4><b>Who</b> is Whatshap?</h4>
 						<p>Three people who want what you want - the best possible nightlife experience! <br />
 							Have any comments, thoughts or suggestions?  Drop us a line.<br />
-							<a href="mailto:info@whatshap.net">info@whatshap.net</a>
+							<br />
+							<a id="contactEmail" href="mailto:info@whatshap.net">info@whatshap.net</a>
 						</p>
 						
 					</div>

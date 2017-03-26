@@ -261,6 +261,19 @@ footer {
 	border: 1px solid black;
 }
 
+#contactEmail {
+	color: white;
+
+}
+a#contactEmail:hover {
+	text-decoration: underline;
+}
+#blueBox {
+	background-color: white;
+}
+#blueBox a {
+	color: ;
+}
 @media only screen and (max-width: 990px) {
 	/*  Control padding in info elements for mobile views */
 	.info p, .picture p {
@@ -270,7 +283,18 @@ footer {
 
 @media only screen and (max-width: 800px) {
 	#defaultForm {
-		visibility: hidden;
+		/*visibility: hidden;*/
+		display: inline;
+		top: 81px;
+	}
+	.btn {
+		padding: .1em .4em;
+	}
+	.btn a {
+		font-size: .8em;
+	}
+	#defaultForm button {
+		display: inline;
 	}
 
 	#responsiveForm {
@@ -284,6 +308,9 @@ footer {
 	#socialMedia {
 		position: relative;
 		top: 0em;
+	}
+	ul#isList {
+		margin-bottom: 0px;
 	}
 
 }
@@ -375,10 +402,7 @@ footer {
 		margin-top:  .4em;
 	} 
 
-	.btn {
-		padding: .6em .6em;
-		
-	}
+	
 
 	.banner a div {
 		width: 50%;
