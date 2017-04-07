@@ -25,7 +25,7 @@
 		},
 		registerUser: function() {
 
-			$('.join').click(function(e)  {
+			$('#join').click(function(e)  {
 
 				console.log(" 'registerUser' has been run.");
 				e.preventDefault();  //  <--Necessary for ajax request to succeed in live deployment (but why?)

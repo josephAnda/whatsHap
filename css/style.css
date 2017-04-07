@@ -281,7 +281,7 @@ a#contactEmail:hover {
 	}
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 720px) {
 	#defaultForm {
 		/*visibility: hidden;*/
 		display: inline;
@@ -315,7 +315,7 @@ a#contactEmail:hover {
 
 }
 
-@media only screen and (max-width: 769px) and (min-width: 415px)  {
+@media only screen and (max-width: 836px) and (min-width: 720px)  {
 	h1, h1#greeting {
 		font-size: 4em;
 	}
@@ -356,18 +356,19 @@ a#contactEmail:hover {
 	
 	#socialMedia {
 		position: relative;
+		top: 0;
 		margin-top:  4em;
-		/*margin:  0 auto;*/
+	/*	margin:  0 auto; */
 	
-	}
-
+	} 
+	
 	#socialMedia img {
 		max-width: 2.7em;
 	}
 	
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 720px) {
 	h1, h1#greeting {
 		font-size: 2em;
 	}
