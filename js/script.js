@@ -26,24 +26,33 @@
 		registerUser: function() {
 
 			$('#join').click(function(e)  {
+				//  [  ]  Test whether or not formData can be validated 
+				//  [  ]  Sub the 'formData' variable into the ajax request.  
 
-				console.log(" 'registerUser' has been run.");
-				e.preventDefault();  //  <--Necessary for ajax request to succeed in live deployment (but why?)
-			     $.ajax({
+				var formData = $('#defaultForm').searialize();
+				console.log(formData);
 
-				      url:'/emailScript.php', 
-				      method:'post',
-				      data : $('#defaultForm').serialize(),
-				      success:function()  {
-				      	console.log("serialization of form data successful");
-				      },
-				      error: function (xhr, ajaxOptions, thrownError) {
-				      	
-				      	console.log(xhr); 
-        				console.log(ajaxOptions);
-        				console.log(thrownError);
-      				  }
-			      })
+				e.preventDefault();  
+				if (formData.indexOf('@') != -1) {
+				     $.ajax({
+
+					      url:'/emailScript.php', 
+					      method:'post',
+					      data : $('#defaultForm').serialize(),
+					      success:function()  {
+					      	console.log("serialization of form data successful");
+					      	alert('Your e-mail address has been submitted successfully!')
+					      },
+					      error: function (xhr, ajaxOptions, thrownError) {
+					      	
+					      	console.log(xhr); 
+	        				console.log(ajaxOptions);
+	        				console.log(thrownError);
+	      				  }
+				      })
+			    } else {
+			    	alert('Please enter a valid e-mail address');
+			    }
 			    //return false;	
 			})	
 		},
